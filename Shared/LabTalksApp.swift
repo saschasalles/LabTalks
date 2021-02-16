@@ -10,11 +10,15 @@ import SwiftUI
 @main
 struct LabTalksApp: App {
     let persistenceController = PersistenceController.shared
-
+    @State private var isWelcomePresented = true
     var body: some Scene {
         WindowGroup {
+            if self.isWelcomePresented {
+                WelcomeView(isWelcomePresented: self.$isWelcomePresented)
+            } else {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            }
         }
     }
 }

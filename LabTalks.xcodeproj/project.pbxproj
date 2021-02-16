@@ -13,6 +13,18 @@
 		DC7F4E3A25DA7F39004CDA7F /* ListMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E3825DA7F39004CDA7F /* ListMessageView.swift */; };
 		DC7F4E4825DA7FA8004CDA7F /* ListMessageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E4725DA7FA8004CDA7F /* ListMessageItemView.swift */; };
 		DC7F4E4925DA7FA8004CDA7F /* ListMessageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E4725DA7FA8004CDA7F /* ListMessageItemView.swift */; };
+		DC7F4E5825DB149B004CDA7F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E5725DB149A004CDA7F /* SignInView.swift */; };
+		DC7F4E5925DB149B004CDA7F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E5725DB149A004CDA7F /* SignInView.swift */; };
+		DC7F4E6025DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E5F25DB3236004CDA7F /* ScaledButtonStyle.swift */; };
+		DC7F4E6125DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E5F25DB3236004CDA7F /* ScaledButtonStyle.swift */; };
+		DC7F4E6225DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E5F25DB3236004CDA7F /* ScaledButtonStyle.swift */; };
+		DC7F4E6325DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E5F25DB3236004CDA7F /* ScaledButtonStyle.swift */; };
+		DC7F4E7525DBC6BB004CDA7F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E7425DBC6BB004CDA7F /* SignUpView.swift */; };
+		DC7F4E7625DBC6BB004CDA7F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E7425DBC6BB004CDA7F /* SignUpView.swift */; };
+		DC7F4E8025DBC73F004CDA7F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E7F25DBC73F004CDA7F /* WelcomeView.swift */; };
+		DC7F4E8125DBC73F004CDA7F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E7F25DBC73F004CDA7F /* WelcomeView.swift */; };
+		DC7F4E8725DBD028004CDA7F /* AnimatedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E8625DBD028004CDA7F /* AnimatedBackground.swift */; };
+		DC7F4E8825DBD028004CDA7F /* AnimatedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F4E8625DBD028004CDA7F /* AnimatedBackground.swift */; };
 		DCEAABE925D6F8D3008221EE /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAABE825D6F8D3008221EE /* Tests_iOS.swift */; };
 		DCEAABF425D6F8D3008221EE /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAABF325D6F8D3008221EE /* Tests_macOS.swift */; };
 		DCEAABF825D6F8D3008221EE /* LabTalksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAABCC25D6F8D2008221EE /* LabTalksApp.swift */; };
@@ -49,6 +61,11 @@
 		DC7F4E3825DA7F39004CDA7F /* ListMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMessageView.swift; sourceTree = "<group>"; };
 		DC7F4E4725DA7FA8004CDA7F /* ListMessageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMessageItemView.swift; sourceTree = "<group>"; };
 		DC7F4E5225DACC23004CDA7F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DC7F4E5725DB149A004CDA7F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		DC7F4E5F25DB3236004CDA7F /* ScaledButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledButtonStyle.swift; sourceTree = "<group>"; };
+		DC7F4E7425DBC6BB004CDA7F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		DC7F4E7F25DBC73F004CDA7F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		DC7F4E8625DBD028004CDA7F /* AnimatedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackground.swift; sourceTree = "<group>"; };
 		DCEAABCC25D6F8D2008221EE /* LabTalksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTalksApp.swift; sourceTree = "<group>"; };
 		DCEAABCD25D6F8D2008221EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DCEAABCE25D6F8D2008221EE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -104,8 +121,17 @@
 			children = (
 				DC7F4E3825DA7F39004CDA7F /* ListMessageView.swift */,
 				DC7F4E4725DA7FA8004CDA7F /* ListMessageItemView.swift */,
+				DC7F4E8625DBD028004CDA7F /* AnimatedBackground.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		DC7F4E5E25DB3225004CDA7F /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				DC7F4E5F25DB3236004CDA7F /* ScaledButtonStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		DCEAABC425D6F8D2008221EE = {
@@ -124,6 +150,7 @@
 		DCEAABC925D6F8D2008221EE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DC7F4E5E25DB3225004CDA7F /* Styles */,
 				DCEAAC1625D6FB69008221EE /* LabTalks.xcdatamodeld */,
 				DCEAABCC25D6F8D2008221EE /* LabTalksApp.swift */,
 				DCEAABCD25D6F8D2008221EE /* ContentView.swift */,
@@ -150,6 +177,9 @@
 				DC7F4E3725DA7F1C004CDA7F /* SubViews */,
 				DCEAABD725D6F8D3008221EE /* Info.plist */,
 				DC7F4E3025DA7EFB004CDA7F /* TalksView.swift */,
+				DC7F4E5725DB149A004CDA7F /* SignInView.swift */,
+				DC7F4E7425DBC6BB004CDA7F /* SignUpView.swift */,
+				DC7F4E7F25DBC73F004CDA7F /* WelcomeView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -342,8 +372,13 @@
 				DC7F4E4825DA7FA8004CDA7F /* ListMessageItemView.swift in Sources */,
 				DCEAABF825D6F8D3008221EE /* LabTalksApp.swift in Sources */,
 				DC7F4E3925DA7F39004CDA7F /* ListMessageView.swift in Sources */,
+				DC7F4E6025DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */,
 				DCEAABFA25D6F8D3008221EE /* ContentView.swift in Sources */,
+				DC7F4E8025DBC73F004CDA7F /* WelcomeView.swift in Sources */,
+				DC7F4E7525DBC6BB004CDA7F /* SignUpView.swift in Sources */,
 				DC7F4E3125DA7EFB004CDA7F /* TalksView.swift in Sources */,
+				DC7F4E5825DB149B004CDA7F /* SignInView.swift in Sources */,
+				DC7F4E8725DBD028004CDA7F /* AnimatedBackground.swift in Sources */,
 				DCEAAC1825D6FB69008221EE /* LabTalks.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +390,7 @@
 				DCEAABFD25D6F8D3008221EE /* Persistence.swift in Sources */,
 				DCEAABF925D6F8D3008221EE /* LabTalksApp.swift in Sources */,
 				DCEAABFB25D6F8D3008221EE /* ContentView.swift in Sources */,
+				DC7F4E6125DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */,
 				DCEAAC1925D6FB69008221EE /* LabTalks.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +399,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7F4E5925DB149B004CDA7F /* SignInView.swift in Sources */,
+				DC7F4E8825DBD028004CDA7F /* AnimatedBackground.swift in Sources */,
+				DC7F4E6225DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */,
 				DC7F4E3225DA7EFB004CDA7F /* TalksView.swift in Sources */,
+				DC7F4E8125DBC73F004CDA7F /* WelcomeView.swift in Sources */,
+				DC7F4E7625DBC6BB004CDA7F /* SignUpView.swift in Sources */,
 				DCEAABE925D6F8D3008221EE /* Tests_iOS.swift in Sources */,
 				DC7F4E4925DA7FA8004CDA7F /* ListMessageItemView.swift in Sources */,
 				DC7F4E3A25DA7F39004CDA7F /* ListMessageView.swift in Sources */,
@@ -375,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCEAABF425D6F8D3008221EE /* Tests_macOS.swift in Sources */,
+				DC7F4E6325DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

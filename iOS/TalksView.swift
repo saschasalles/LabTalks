@@ -12,17 +12,39 @@ struct TalksView: View {
         NavigationView {
             List{
                 ListMessageView()
-            }.listStyle(InsetGroupedListStyle())
+                ListMessageView()
+            }.listStyle(GroupedListStyle())
+            .environment(\.horizontalSizeClass, .regular)
             .navigationBarTitle(Text("Talks"))
-            .navigationBarItems(trailing:
-                                    Button(action: {
-                                        print("new message")
-                                    }, label: {
-                                        Image(systemName: "plus.bubble")
-                                            .foregroundColor(Color("barBlue"))
-                                            .font(.title2)
-                                            
-                                    }))
+            .navigationBarItems(
+                leading:
+                    HStack{
+                        Button(action: {
+                            print("new message")
+                        }, label: {
+                            Image(systemName: "video")
+                                .foregroundColor(Color("barBlue"))
+                                .font(.title3)
+                            
+                        })
+                        Button(action: {
+                            print("new message")
+                        }, label: {
+                            Image(systemName: "phone")
+                                .foregroundColor(Color("barBlue"))
+                                .font(.title3)
+                            
+                        })
+                    },
+                trailing:
+                    Button(action: {
+                        print("new message")
+                    }, label: {
+                        Image(systemName: "plus.bubble")
+                            .foregroundColor(Color("barBlue"))
+                            .font(.title3)
+                    })
+            )
         }
     }
 }
