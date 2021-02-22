@@ -8,7 +8,7 @@ Features:
 * File/Code paste
 
 Future Features:
-* Video Stream
-* Video Calls
+* Video Stream -> HLS https://developer.apple.com/documentation/http_live_streaming
+* Video Calls -> https://docs.quickblox.com/docs/ios-video-calling or https://webrtc.org
 
 
