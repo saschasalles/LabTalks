@@ -20,16 +20,15 @@ struct ContentView: View {
                     Text("Talks")
                     Image(systemName: "bubble.left.and.bubble.right.fill")
                 }.tag(1)
-            Text("Tab Content 2")
+            GroupsView()
                 .tabItem {
                     Text("Groups")
                     Image(systemName: "rectangle.3.offgrid.bubble.left.fill")
                 }.tag(2)
-            
             Text("Tab Content 3")
                 .tabItem {
                     Text("Paste")
-                    Image(systemName: "arrow.up.doc.fill")
+                    Image(systemName: "chevron.right.circle.fill")
                 }.tag(3)
             Text("Tab Content 4")
                 .tabItem {

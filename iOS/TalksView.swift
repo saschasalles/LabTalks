@@ -12,30 +12,10 @@ struct TalksView: View {
         NavigationView {
             List{
                 ListMessageView()
-                ListMessageView()
-            }.listStyle(GroupedListStyle())
+            }.listStyle(InsetGroupedListStyle())
             .environment(\.horizontalSizeClass, .regular)
             .navigationBarTitle(Text("Talks"))
             .navigationBarItems(
-                leading:
-                    HStack{
-                        Button(action: {
-                            print("new message")
-                        }, label: {
-                            Image(systemName: "video")
-                                .foregroundColor(Color("barBlue"))
-                                .font(.title3)
-                            
-                        })
-                        Button(action: {
-                            print("new message")
-                        }, label: {
-                            Image(systemName: "phone")
-                                .foregroundColor(Color("barBlue"))
-                                .font(.title3)
-                            
-                        })
-                    },
                 trailing:
                     Button(action: {
                         print("new message")

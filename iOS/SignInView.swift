@@ -14,7 +14,7 @@ struct SignInView: View {
     @State private var password: String = ""
     var body: some View {
         ZStack{
-            AnimatedBackground().edgesIgnoringSafeArea(.all)
+            AnimatedBackground(colors: [Color(#colorLiteral(red: 0.1244810298, green: 0.1984634399, blue: 0.3261451125, alpha: 1)), Color(#colorLiteral(red: 0.1125099916, green: 0.1603941221, blue: 0.3757450064, alpha: 1)), Color(#colorLiteral(red: 0.08556153169, green: 0.1475736123, blue: 0.2967944588, alpha: 1)), Color(#colorLiteral(red: 0.3385225086, green: 0.3385225086, blue: 0.3385225086, alpha: 1)), Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))]).edgesIgnoringSafeArea(.all)
             VStack {
                 HStack {
                     Spacer()

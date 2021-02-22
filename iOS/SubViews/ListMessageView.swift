@@ -14,6 +14,10 @@ struct ListMessageView: View {
             ListMessageItemView(isUnread: true)
             ListMessageItemView(isUnread: false)
             ListMessageItemView(isUnread: false)
+            ListMessageItemView(isUnread: true)
+            ListMessageItemView(isUnread: true)
+            ListMessageItemView(isUnread: false)
+            ListMessageItemView(isUnread: false)
         }
     }
 }
