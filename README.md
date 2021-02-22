@@ -7,7 +7,7 @@ Features:
 * Instant grouped chats
 * File/Code paste
 
-Futur Features:
+Future Features:
 * Video Stream
 * Video Calls
 
