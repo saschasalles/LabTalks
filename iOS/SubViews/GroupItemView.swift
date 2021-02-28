@@ -10,8 +10,9 @@ import SwiftUI
 struct GroupItemView: View {
     let groupName: String
     var body: some View {
-        VStack(spacing: 24) {
+        VStack(spacing: 20) {
             Image(systemName: "person.3.fill")
+                .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
             Text(self.groupName)
                 .font(Font.system(.title3, design: .rounded))
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)

@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct ScaledButtonStyle: ButtonStyle {
-    var bgColor: Color
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-            .padding(15)
+            .padding(13)
             .background(
                 ZStack {
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
@@ -19,7 +18,7 @@ struct ScaledButtonStyle: ButtonStyle {
                         .shadow(color: .clear, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? 7: 18, y: configuration.isPressed ? 4: 8)
                         .blendMode(.overlay)
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .fill(bgColor)
+                        .fill(Color(.secondarySystemFill))
                 }
         )
             .scaleEffect(configuration.isPressed ? 0.95: 1)

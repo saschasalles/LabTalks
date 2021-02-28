@@ -14,14 +14,16 @@ struct ListMessageItemView: View {
         HStack {
             if self.isUnread {
                 Circle()
-                    .frame(width:10, height: 10)
+                    .frame(width:12, height: 12)
                     .foregroundColor(.blue)
             }
             
             Circle()
-                .frame(width:35, height: 35)
+                .frame(width:45, height: 45)
                 .foregroundColor(Color("barBlue"))
-                .overlay(Text("SS").foregroundColor(.white))
+                .overlay(Text("SS")
+                            .font(Font.system(.title3, design: .rounded))
+                            .foregroundColor(.white))
             
             VStack(alignment: .leading) {
                 Text("Contact Name")
@@ -38,7 +40,7 @@ struct ListMessageItemView: View {
                     .foregroundColor(.gray)
             }
         }
-        .padding(.leading,self.isUnread ? -8 : 10)
+        .padding(.leading,self.isUnread ? -10 : 10)
         .padding(.trailing, 8)
         .padding(.vertical, 8)
     }

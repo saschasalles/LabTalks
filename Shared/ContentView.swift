@@ -27,7 +27,7 @@ struct ContentView: View {
                 }.tag(2)
             Text("Tab Content 3")
                 .tabItem {
-                    Text("Paste")
+                    Text("Friends")
                     Image(systemName: "chevron.right.circle.fill")
                 }.tag(3)
             Text("Tab Content 4")

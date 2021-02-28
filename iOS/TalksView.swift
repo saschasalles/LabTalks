@@ -12,7 +12,8 @@ struct TalksView: View {
         NavigationView {
             List{
                 ListMessageView()
-            }.listStyle(InsetGroupedListStyle())
+                
+            }.listStyle(GroupedListStyle())
             .environment(\.horizontalSizeClass, .regular)
             .navigationBarTitle(Text("Talks"))
             .navigationBarItems(
