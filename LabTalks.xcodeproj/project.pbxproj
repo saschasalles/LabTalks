@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B276D5925ED60B900F21C7B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B276D5825ED60B900F21C7B /* CustomTextField.swift */; };
+		2B276D5A25ED60B900F21C7B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B276D5825ED60B900F21C7B /* CustomTextField.swift */; };
+		2B276D6425ED671F00F21C7B /* AutoScrollText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B276D6325ED671F00F21C7B /* AutoScrollText.swift */; };
+		2B276D6525ED671F00F21C7B /* AutoScrollText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B276D6325ED671F00F21C7B /* AutoScrollText.swift */; };
+		2B8810BB25ED97E000D64874 /* RoundedFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8810BA25ED97E000D64874 /* RoundedFont.swift */; };
 		DC62D48125E1174500D22188 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62D48025E1174500D22188 /* GroupsView.swift */; };
 		DC62D48225E1174500D22188 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62D48025E1174500D22188 /* GroupsView.swift */; };
 		DC62D48C25E118C300D22188 /* GroupItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62D48B25E118C300D22188 /* GroupItemView.swift */; };
@@ -61,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B276D5825ED60B900F21C7B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2B276D6325ED671F00F21C7B /* AutoScrollText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollText.swift; sourceTree = "<group>"; };
+		2B8810BA25ED97E000D64874 /* RoundedFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedFont.swift; sourceTree = "<group>"; };
 		DC62D48025E1174500D22188 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		DC62D48B25E118C300D22188 /* GroupItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupItemView.swift; sourceTree = "<group>"; };
 		DC7F4E3025DA7EFB004CDA7F /* TalksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksView.swift; sourceTree = "<group>"; };
@@ -122,6 +130,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B8810B925ED97CC00D64874 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B8810BA25ED97E000D64874 /* RoundedFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DC7F4E3725DA7F1C004CDA7F /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +145,8 @@
 				DC7F4E4725DA7FA8004CDA7F /* ListMessageItemView.swift */,
 				DC7F4E8625DBD028004CDA7F /* AnimatedBackground.swift */,
 				DC62D48B25E118C300D22188 /* GroupItemView.swift */,
+				2B276D5825ED60B900F21C7B /* CustomTextField.swift */,
+				2B276D6325ED671F00F21C7B /* AutoScrollText.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -181,6 +199,7 @@
 		DCEAABD625D6F8D3008221EE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2B8810B925ED97CC00D64874 /* Extensions */,
 				DC7F4E3725DA7F1C004CDA7F /* SubViews */,
 				DCEAABD725D6F8D3008221EE /* Info.plist */,
 				DC7F4E3025DA7EFB004CDA7F /* TalksView.swift */,
@@ -376,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B276D5925ED60B900F21C7B /* CustomTextField.swift in Sources */,
 				DCEAABFC25D6F8D3008221EE /* Persistence.swift in Sources */,
 				DC7F4E4825DA7FA8004CDA7F /* ListMessageItemView.swift in Sources */,
 				DC62D48125E1174500D22188 /* GroupsView.swift in Sources */,
@@ -386,7 +406,9 @@
 				DC7F4E8025DBC73F004CDA7F /* WelcomeView.swift in Sources */,
 				DC7F4E7525DBC6BB004CDA7F /* SignUpView.swift in Sources */,
 				DC7F4E3125DA7EFB004CDA7F /* TalksView.swift in Sources */,
+				2B8810BB25ED97E000D64874 /* RoundedFont.swift in Sources */,
 				DC7F4E5825DB149B004CDA7F /* SignInView.swift in Sources */,
+				2B276D6425ED671F00F21C7B /* AutoScrollText.swift in Sources */,
 				DC62D48C25E118C300D22188 /* GroupItemView.swift in Sources */,
 				DC7F4E8725DBD028004CDA7F /* AnimatedBackground.swift in Sources */,
 				DCEAAC1825D6FB69008221EE /* LabTalks.xcdatamodeld in Sources */,
@@ -412,9 +434,11 @@
 				DC7F4E5925DB149B004CDA7F /* SignInView.swift in Sources */,
 				DC7F4E8825DBD028004CDA7F /* AnimatedBackground.swift in Sources */,
 				DC62D48225E1174500D22188 /* GroupsView.swift in Sources */,
+				2B276D5A25ED60B900F21C7B /* CustomTextField.swift in Sources */,
 				DC7F4E6225DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */,
 				DC7F4E3225DA7EFB004CDA7F /* TalksView.swift in Sources */,
 				DC7F4E8125DBC73F004CDA7F /* WelcomeView.swift in Sources */,
+				2B276D6525ED671F00F21C7B /* AutoScrollText.swift in Sources */,
 				DC62D48D25E118C300D22188 /* GroupItemView.swift in Sources */,
 				DC7F4E7625DBC6BB004CDA7F /* SignUpView.swift in Sources */,
 				DCEAABE925D6F8D3008221EE /* Tests_iOS.swift in Sources */,

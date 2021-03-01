@@ -12,11 +12,17 @@ struct GroupItemView: View {
     var body: some View {
         VStack(spacing: 20) {
             Image(systemName: "person.3.fill")
-                .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-            Text(self.groupName)
-                .font(Font.system(.title3, design: .rounded))
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .multilineTextAlignment(.leading)
+                .foregroundColor(Color(.systemGray4))
+            if self.groupName.count >= 14 {
+            AutoScrollText(text: self.groupName,
+                           font: UIFont.rounded(ofSize: 20, weight: .bold),
+                           leftFade: 30,
+                           rightFade: 10,
+                           startDelay: 1)
+            } else {
+                    Text(self.groupName)
+                        .font(Font(UIFont.rounded(ofSize: 20, weight: .bold)))
+            }
             HStack {
                 Button(action: {
                     print("isFavorite")

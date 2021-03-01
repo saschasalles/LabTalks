@@ -14,11 +14,11 @@ struct ScaledButtonStyle: ButtonStyle {
             .background(
                 ZStack {
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7128507653)), radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? -2: -3, y: configuration.isPressed ? -2: -6)
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7128507653)), radius: configuration.isPressed ? 5: 8, x: configuration.isPressed ? -2: -3, y: configuration.isPressed ? -2: -6)
                         .shadow(color: .clear, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? 7: 18, y: configuration.isPressed ? 4: 8)
                         .blendMode(.overlay)
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .fill(Color(.secondarySystemFill))
+                        .fill(Color(#colorLiteral(red: 0.1862422824, green: 0.2985923886, blue: 0.4537051916, alpha: 0.86)))
                 }
         )
             .scaleEffect(configuration.isPressed ? 0.95: 1)

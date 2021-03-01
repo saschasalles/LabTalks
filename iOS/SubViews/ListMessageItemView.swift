@@ -20,9 +20,10 @@ struct ListMessageItemView: View {
             
             Circle()
                 .frame(width:45, height: 45)
-                .foregroundColor(Color("barBlue"))
+                .foregroundColor(Color(.systemGray2))
                 .overlay(Text("SS")
                             .font(Font.system(.title3, design: .rounded))
+                            .bold()
                             .foregroundColor(.white))
             
             VStack(alignment: .leading) {

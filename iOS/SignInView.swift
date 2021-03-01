@@ -29,7 +29,6 @@ struct SignInView: View {
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 0.8000372024)))
                             .font(.largeTitle)
                     })
-
                 }
                 Spacer()
                 HStack {
@@ -47,56 +46,8 @@ struct SignInView: View {
                 }
 
                 VStack(spacing: 20) {
-                    ZStack(alignment: .leading) {
-                        if self.email.isEmpty {
-                            Text("Email")
-                                .foregroundColor(.white)
-                                .padding(.leading, 45)
-                                .font(Font.system(size: 18, weight: .medium, design: .default))
-                        }
-                        HStack {
-                            Image(systemName: "envelope.fill")
-                                .frame(width: 18)
-                                .padding(.leading)
-                                .foregroundColor(Color(.lightGray))
-
-                            TextField("", text: self.$email)
-                                .autocapitalization(.none)
-                                .disableAutocorrection(true)
-                        }
-                            .padding(.vertical, 12)
-                            .foregroundColor(.white)
-
-                            .font(Font.system(size: 18, weight: .medium, design: .default))
-                            .background(RoundedRectangle(cornerRadius: 12))
-                            .foregroundColor(Color(#colorLiteral(red: 0.1749373674, green: 0.1741261482, blue: 0.2056128979, alpha: 0.3685379959)))
-                    }
-
-                    ZStack(alignment: .leading) {
-                        if self.password.isEmpty {
-                            Text("Password")
-                                .padding(.leading, 45)
-                                .font(Font.system(size: 18, weight: .medium, design: .default))
-                                .foregroundColor(Color.white)
-                        }
-                        HStack {
-                            Image(systemName: "key.fill")
-                                .frame(width: 18)
-                                .padding(.leading)
-                                .foregroundColor(Color(.lightGray))
-                            SecureField("", text: self.$password)
-                                .autocapitalization(.none)
-                                .disableAutocorrection(true)
-
-                        }
-                            .padding(.vertical, 12)
-                            .foregroundColor(.white)
-                            .font(Font.system(size: 18, weight: .medium, design: .default))
-                            .background(RoundedRectangle(cornerRadius: 12))
-                            .foregroundColor(Color(#colorLiteral(red: 0.1749373674, green: 0.1741261482, blue: 0.2056128979, alpha: 0.3685379959)))
-
-                    }
-
+                    CustomTextField(value: $email, image: "envelope.fill", placeholder: "Email")
+                    CustomTextField(value: $password, image: "key.fill", placeholder: "Password", isSecure: true)
 
                     Button(action: {
                         print("submit")
