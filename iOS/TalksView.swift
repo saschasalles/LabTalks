@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TalksView: View {
+    
+    @ObservedObject var searchBar: SearchBar = SearchBar()
+    
     var body: some View {
         NavigationView {
             ScrollView{
@@ -25,7 +28,9 @@ struct TalksView: View {
                             .font(.title3)
                     })
             )
+            .add(self.searchBar)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

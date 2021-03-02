@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import Fakery
 
 struct ListMessageView: View {
+    public let faker = Faker(locale: "fr")
     var body: some View {
-        LazyVStack {
-            ForEach(0..<15) {_ in
+        VStack {
+            ForEach(0..<15) { _ in
                 NavigationLink(destination: Text("Message View")) {
-                    ListMessageItemView(isUnread: Bool.random(), lastMessage: "Utilisez le code de vérification 331372 pour l’authentification Microsoft.")
-                        
+                    ListMessageItemView(isUnread: Bool.random(), contactFirstName: faker.name.firstName(), contactLastName: faker.name.lastName(), lastMessage: faker.lorem.sentence(wordsAmount: 10))
                         .padding(.leading, 10)
                         
                 }.buttonStyle(PlainButtonStyle())
@@ -21,7 +22,7 @@ struct ListMessageView: View {
             }.onDelete(perform: { _ in
                 print("delete")
             })
-        }
+        }.padding(.vertical)
     }
 }
 

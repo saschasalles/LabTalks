@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ListMessageItemView: View {
     @State var isUnread = false
+    @State var contactFirstName: String
+    @State var contactLastName: String
     @State var lastMessage: String
     var body: some View {
         
@@ -23,7 +25,7 @@ struct ListMessageItemView: View {
             Circle()
                 .frame(width: 48, height: 48)
                 .foregroundColor(Color(#colorLiteral(red: 0.7492758632, green: 0.7693317533, blue: 0.7860328555, alpha: 1)))
-                .overlay(Text("SS")
+                .overlay(Text(getInitials(forFirstName: self.contactFirstName, andLastName: self.contactLastName))
                             .font(Font.system(.title3, design: .rounded))
                             .bold()
                             .foregroundColor(.white))
@@ -31,7 +33,7 @@ struct ListMessageItemView: View {
             
             VStack(alignment: .leading, spacing: 5) {
                 HStack {
-                    Text("Contact Name")
+                    Text("\(contactFirstName) \(contactLastName)")
                         .font(.body)
                         .bold()
                     Spacer()
@@ -59,9 +61,15 @@ struct ListMessageItemView: View {
     }
 }
 
+func getInitials(forFirstName first: String, andLastName second: String) -> String {
+    guard let firstInitial = first.first, let secondInitial = second.first else { return "" }
+    let res = "\(firstInitial)\(secondInitial)"
+    return res
+}
+
 struct ListMessageItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ListMessageItemView(isUnread: true, lastMessage: "As tu jeté un sort à Dobby ?")
+        ListMessageItemView(isUnread: true, contactFirstName: "",  contactLastName: "",lastMessage: "As tu jeté un sort à Dobby ?")
     }
 }
 

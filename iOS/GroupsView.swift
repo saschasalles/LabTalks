@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Fakery
 
 struct GroupsView: View {
     
@@ -20,9 +21,11 @@ struct GroupsView: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: gridItemLayout, alignment: .center, spacing: 20) {
-                    ForEach(0..<groupNames.count) {
-                        GroupItemView(groupName: groupNames[$0], groupMembersCount: Int.random(in: 0..<30))
-                            .padding(.horizontal,  5)
+                    ForEach(0..<groupNames.count) { value in
+                        NavigationLink(destination: Text("Message Group"), label: {
+                            GroupItemView(groupName: groupNames[value], groupMembersCount: Int.random(in: 0..<30))
+                        }).buttonStyle(PlainButtonStyle())
+                        .padding(.horizontal,  5)
                     }
                 }.padding(.horizontal, 10)
             }

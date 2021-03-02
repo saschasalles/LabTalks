@@ -7,10 +7,12 @@
 
 import SwiftUI
 import CoreData
+import Fakery
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var context
     @State private var selection: Int = 0
+
     
     var body: some View {
         #if os(iOS)
@@ -28,7 +30,7 @@ struct ContentView: View {
             Text("Tab Content 3")
                 .tabItem {
                     Text("Friends")
-                    Image(systemName: "rectangle.stack.person.crop.fill")
+                    Image(systemName: "person.2.circle.fill")
                 }.tag(3)
             Text("Tab Content 4")
                 .tabItem {
