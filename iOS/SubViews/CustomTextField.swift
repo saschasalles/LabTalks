@@ -26,7 +26,7 @@ struct CustomTextField: View {
                 Image(systemName: self.image)
                     .frame(width: 18)
                     .padding(.leading)
-                    .foregroundColor(Color(.systemGray5))
+                    .foregroundColor(Color(#colorLiteral(red: 0.9115442634, green: 0.9180048108, blue: 0.9500313401, alpha: 1)))
                 if !self.isSecure {
                 TextField("", text: self.$value)
                     .autocapitalization(.none)

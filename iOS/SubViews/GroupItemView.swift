@@ -9,45 +9,44 @@ import SwiftUI
 
 struct GroupItemView: View {
     let groupName: String
+    let groupMembersCount: Int
     var body: some View {
-        VStack(spacing: 20) {
-            Image(systemName: "person.3.fill")
-                .foregroundColor(Color(.systemGray4))
-            if self.groupName.count >= 14 {
-            AutoScrollText(text: self.groupName,
-                           font: UIFont.rounded(ofSize: 20, weight: .bold),
-                           leftFade: 30,
-                           rightFade: 10,
-                           startDelay: 1)
-            } else {
+        Color(.systemGray6)
+            .cornerRadius(22)
+            .overlay(
+                VStack(alignment: .center) {
+                    Image(systemName: "person.3.fill")
+                        .foregroundColor(Color(.systemGray4))
+                    Spacer()
                     Text(self.groupName)
-                        .font(Font(UIFont.rounded(ofSize: 20, weight: .bold)))
-            }
-            HStack {
-                Button(action: {
-                    print("isFavorite")
-                }, label: {
-                    Image(systemName: "star.fill")
-                        .foregroundColor(Color(.systemYellow))
-                })
-                Spacer()
-                Image(systemName: "person.2.circle.fill")
-                Text("21")
-                    .font(Font.system(.body, design: .rounded))
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-            }
-            .foregroundColor(Color("barBlue"))
-        }
-        .padding()
-        .clipped()
-        .frame(maxWidth: .infinity, minHeight: 120, maxHeight: 140)
-        .background(Color(.systemGray6))
-        .cornerRadius(18)
+                        .font(Font.system(.title3, design: .rounded))
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(3)
+                    Spacer()
+                    HStack {
+                        Button(action: {
+                            print("isFavorite")
+                        }, label: {
+                            Image(systemName: "star.fill")
+                                .foregroundColor(Color(.systemYellow))
+                        })
+                        Spacer()
+                        Image(systemName: "person.2.circle.fill")
+                        Text(String(groupMembersCount))
+                            .font(Font.system(.body, design: .rounded))
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    }
+                    .foregroundColor(Color("barBlue"))
+                }.padding(15)
+                .clipped()
+            ).frame(height: 160)
+
     }
 }
 
 struct GroupItemView_Previews: PreviewProvider {
     static var previews: some View {
-        GroupItemView(groupName: "Alternants")
+        GroupItemView(groupName: "Alternants", groupMembersCount: 12)
     }
 }

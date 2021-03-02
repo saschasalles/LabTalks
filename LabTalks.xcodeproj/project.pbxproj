@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2B276D5925ED60B900F21C7B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B276D5825ED60B900F21C7B /* CustomTextField.swift */; };
 		2B276D5A25ED60B900F21C7B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B276D5825ED60B900F21C7B /* CustomTextField.swift */; };
-		2B276D6425ED671F00F21C7B /* AutoScrollText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B276D6325ED671F00F21C7B /* AutoScrollText.swift */; };
-		2B276D6525ED671F00F21C7B /* AutoScrollText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B276D6325ED671F00F21C7B /* AutoScrollText.swift */; };
 		2B8810BB25ED97E000D64874 /* RoundedFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8810BA25ED97E000D64874 /* RoundedFont.swift */; };
 		DC62D48125E1174500D22188 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62D48025E1174500D22188 /* GroupsView.swift */; };
 		DC62D48225E1174500D22188 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62D48025E1174500D22188 /* GroupsView.swift */; };
@@ -67,7 +65,6 @@
 
 /* Begin PBXFileReference section */
 		2B276D5825ED60B900F21C7B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		2B276D6325ED671F00F21C7B /* AutoScrollText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollText.swift; sourceTree = "<group>"; };
 		2B8810BA25ED97E000D64874 /* RoundedFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedFont.swift; sourceTree = "<group>"; };
 		DC62D48025E1174500D22188 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		DC62D48B25E118C300D22188 /* GroupItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupItemView.swift; sourceTree = "<group>"; };
@@ -146,7 +143,6 @@
 				DC7F4E8625DBD028004CDA7F /* AnimatedBackground.swift */,
 				DC62D48B25E118C300D22188 /* GroupItemView.swift */,
 				2B276D5825ED60B900F21C7B /* CustomTextField.swift */,
-				2B276D6325ED671F00F21C7B /* AutoScrollText.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -408,7 +404,6 @@
 				DC7F4E3125DA7EFB004CDA7F /* TalksView.swift in Sources */,
 				2B8810BB25ED97E000D64874 /* RoundedFont.swift in Sources */,
 				DC7F4E5825DB149B004CDA7F /* SignInView.swift in Sources */,
-				2B276D6425ED671F00F21C7B /* AutoScrollText.swift in Sources */,
 				DC62D48C25E118C300D22188 /* GroupItemView.swift in Sources */,
 				DC7F4E8725DBD028004CDA7F /* AnimatedBackground.swift in Sources */,
 				DCEAAC1825D6FB69008221EE /* LabTalks.xcdatamodeld in Sources */,
@@ -438,7 +433,6 @@
 				DC7F4E6225DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */,
 				DC7F4E3225DA7EFB004CDA7F /* TalksView.swift in Sources */,
 				DC7F4E8125DBC73F004CDA7F /* WelcomeView.swift in Sources */,
-				2B276D6525ED671F00F21C7B /* AutoScrollText.swift in Sources */,
 				DC62D48D25E118C300D22188 /* GroupItemView.swift in Sources */,
 				DC7F4E7625DBC6BB004CDA7F /* SignUpView.swift in Sources */,
 				DCEAABE925D6F8D3008221EE /* Tests_iOS.swift in Sources */,

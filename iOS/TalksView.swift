@@ -10,11 +10,10 @@ import SwiftUI
 struct TalksView: View {
     var body: some View {
         NavigationView {
-            List{
+            ScrollView{
                 ListMessageView()
-                
-            }.listStyle(GroupedListStyle())
-            .environment(\.horizontalSizeClass, .regular)
+            }
+            .padding(0)
             .navigationBarTitle(Text("Talks"))
             .navigationBarItems(
                 trailing:

@@ -9,18 +9,20 @@ import SwiftUI
 
 struct GroupsView: View {
     
-    private var groupNames = ["Alternants", "Apple Lab 2020", "Web M1", "Projets Apple", "Web B2", "Groupe Vapor", "Groupe CloudKit", "Challenge 48h", "Yann et Antoine", "App Vidéos"]
+    private var groupNames = ["Alternants", "Apple Lab Confiné ", "Web M1", "Projets Apple", "INFO B3 C Suivi de projet", "Groupe Vapor", "Groupe CloudKit", "Challenge 48h", "Yann et Antoine", "App Vidéos"]
     
     private var colors: [Color] = [.yellow, .purple, .green]
     
-    private var gridItemLayout = [GridItem(.flexible(minimum: 120, maximum: 220)), GridItem(.flexible(minimum: 120, maximum: 220))]
+    private var gridItemLayout = [
+        GridItem(.adaptive(minimum: 120)),
+        GridItem(.adaptive(minimum: 120))]
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: gridItemLayout, spacing: 20) {
+                LazyVGrid(columns: gridItemLayout, alignment: .center, spacing: 20) {
                     ForEach(0..<groupNames.count) {
-                        GroupItemView(groupName: groupNames[$0])
-                            .padding(.horizontal, 5)
+                        GroupItemView(groupName: groupNames[$0], groupMembersCount: Int.random(in: 0..<30))
+                            .padding(.horizontal,  5)
                     }
                 }.padding(.horizontal, 10)
             }

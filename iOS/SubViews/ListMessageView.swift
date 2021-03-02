@@ -9,15 +9,18 @@ import SwiftUI
 
 struct ListMessageView: View {
     var body: some View {
-        Section(header: Text("Last Messages")) {
-            ListMessageItemView(isUnread: true)
-            ListMessageItemView(isUnread: true)
-            ListMessageItemView(isUnread: false)
-            ListMessageItemView(isUnread: false)
-            ListMessageItemView(isUnread: true)
-            ListMessageItemView(isUnread: true)
-            ListMessageItemView(isUnread: false)
-            ListMessageItemView(isUnread: false)
+        LazyVStack {
+            ForEach(0..<15) {_ in
+                NavigationLink(destination: Text("Message View")) {
+                    ListMessageItemView(isUnread: Bool.random(), lastMessage: "Utilisez le code de vérification 331372 pour l’authentification Microsoft.")
+                        
+                        .padding(.leading, 10)
+                        
+                }.buttonStyle(PlainButtonStyle())
+                
+            }.onDelete(perform: { _ in
+                print("delete")
+            })
         }
     }
 }
