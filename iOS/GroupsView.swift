@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Fakery
 
 struct GroupsView: View {
     
