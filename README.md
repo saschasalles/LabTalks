@@ -4,7 +4,7 @@
 
 
 ## Privacy First
-Personal STUN/TURN services on my server.
+> Personal STUN/TURN services on my server.
 
 Features:
 * Instant chats
