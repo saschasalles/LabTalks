@@ -13,4 +13,7 @@ Future Features:
 * Video Calls -> CallKit + RTC : https://docs.quickblox.com/docs/ios-video-calling or https://webrtc.org
 * Audio Calls -> CallKit + RTC : https://webrtc.github.io/webrtc-org/native-code/ios/
 
+![stack.png](https://github.com/saschasalles/LabTalks/blob/main/screen.png)
+
+
 ![stack.png](https://github.com/saschasalles/LabTalks/blob/main/stack.png)
