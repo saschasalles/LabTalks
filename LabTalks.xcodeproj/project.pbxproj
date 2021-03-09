@@ -75,6 +75,7 @@
 		2B231CE425EF8FD000C50144 /* CallKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitHelper.swift; sourceTree = "<group>"; };
 		2B231CEE25EF905A00C50144 /* CallManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManagement.swift; sourceTree = "<group>"; };
 		2B276D5825ED60B900F21C7B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2B74E53A25F7C14B00011347 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2B8810BA25ED97E000D64874 /* RoundedFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedFont.swift; sourceTree = "<group>"; };
 		2B8810CB25EEB81600D64874 /* SearchAdaptedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAdaptedView.swift; sourceTree = "<group>"; };
 		2B8810D525EEB9B500D64874 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -193,6 +194,7 @@
 		DCEAABC425D6F8D2008221EE = {
 			isa = PBXGroup;
 			children = (
+				2B74E53A25F7C14B00011347 /* .gitignore */,
 				2BE0B02F25F1899C00FEB7EB /* LabTalks.entitlements */,
 				DC7F4E5225DACC23004CDA7F /* README.md */,
 				DCEAABC925D6F8D2008221EE /* Shared */,
