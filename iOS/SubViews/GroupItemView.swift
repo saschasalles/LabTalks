@@ -41,6 +41,7 @@ struct GroupItemView: View {
                 }.padding(15)
                 .clipped()
             ).frame(height: 160)
+            .contentShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
 
     }
 }

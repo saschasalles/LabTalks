@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B0D6A4725F18CF20040AAF3 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 2B0D6A4625F18CF20040AAF3 /* Fakery */; };
+		2B0D6A4725F18CF20040AAF3 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 2B0D6A4625F18CF20040AAF3 /* SwiftPackageProductDependency */; };
 		2B231CE525EF8FD000C50144 /* CallKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B231CE425EF8FD000C50144 /* CallKitHelper.swift */; };
 		2B231CE625EF8FD000C50144 /* CallKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B231CE425EF8FD000C50144 /* CallKitHelper.swift */; };
 		2B231CEF25EF905A00C50144 /* CallManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B231CEE25EF905A00C50144 /* CallManagement.swift */; };
@@ -18,6 +18,8 @@
 		2B8810CC25EEB81600D64874 /* SearchAdaptedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8810CB25EEB81600D64874 /* SearchAdaptedView.swift */; };
 		2B8810D625EEB9B500D64874 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8810D525EEB9B500D64874 /* SearchBar.swift */; };
 		2BE0B03125F189CA00FEB7EB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE0B03025F189CA00FEB7EB /* CloudKit.framework */; };
+		65B7D2E9761C00E3D40637DB /* Pods_LabTalks__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D853FE6309CBA538711FAA19 /* Pods_LabTalks__macOS_.framework */; };
+		938B7756217B31997BCE77D9 /* Pods_LabTalks__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E387626ECECA701A10B4FB /* Pods_LabTalks__iOS_.framework */; };
 		DC62D48125E1174500D22188 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62D48025E1174500D22188 /* GroupsView.swift */; };
 		DC62D48225E1174500D22188 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62D48025E1174500D22188 /* GroupsView.swift */; };
 		DC62D48C25E118C300D22188 /* GroupItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62D48B25E118C300D22188 /* GroupItemView.swift */; };
@@ -81,6 +83,12 @@
 		2B8810D525EEB9B500D64874 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		2BE0B02F25F1899C00FEB7EB /* LabTalks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LabTalks.entitlements; path = ../../../.Trash/LabTalks.entitlements; sourceTree = "<group>"; };
 		2BE0B03025F189CA00FEB7EB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		2E4DCD5C7FE3B552E76C5241 /* Pods-LabTalks (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LabTalks (macOS).debug.xcconfig"; path = "Target Support Files/Pods-LabTalks (macOS)/Pods-LabTalks (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		7839AB63675AE83E6669CE5A /* Pods-LabTalks (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LabTalks (iOS).release.xcconfig"; path = "Target Support Files/Pods-LabTalks (iOS)/Pods-LabTalks (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		8EAD86B143B7A04247B076B0 /* Pods-LabTalks (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LabTalks (iOS).debug.xcconfig"; path = "Target Support Files/Pods-LabTalks (iOS)/Pods-LabTalks (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		92E387626ECECA701A10B4FB /* Pods_LabTalks__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LabTalks__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28999D51CC605F6CAC4ED24 /* Pods-LabTalks (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LabTalks (macOS).release.xcconfig"; path = "Target Support Files/Pods-LabTalks (macOS)/Pods-LabTalks (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		D853FE6309CBA538711FAA19 /* Pods_LabTalks__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LabTalks__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC62D48025E1174500D22188 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		DC62D48B25E118C300D22188 /* GroupItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupItemView.swift; sourceTree = "<group>"; };
 		DC7F4E3025DA7EFB004CDA7F /* TalksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksView.swift; sourceTree = "<group>"; };
@@ -115,8 +123,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0D6A4725F18CF20040AAF3 /* Fakery in Frameworks */,
+				2B0D6A4725F18CF20040AAF3 /* BuildFile in Frameworks */,
 				2BE0B03125F189CA00FEB7EB /* CloudKit.framework in Frameworks */,
+				938B7756217B31997BCE77D9 /* Pods_LabTalks__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B7D2E9761C00E3D40637DB /* Pods_LabTalks__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				2BE0B03025F189CA00FEB7EB /* CloudKit.framework */,
+				92E387626ECECA701A10B4FB /* Pods_LabTalks__iOS_.framework */,
+				D853FE6309CBA538711FAA19 /* Pods_LabTalks__macOS_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +181,18 @@
 				2B8810D525EEB9B500D64874 /* SearchBar.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A260587CB9065F603B0D8497 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EAD86B143B7A04247B076B0 /* Pods-LabTalks (iOS).debug.xcconfig */,
+				7839AB63675AE83E6669CE5A /* Pods-LabTalks (iOS).release.xcconfig */,
+				2E4DCD5C7FE3B552E76C5241 /* Pods-LabTalks (macOS).debug.xcconfig */,
+				A28999D51CC605F6CAC4ED24 /* Pods-LabTalks (macOS).release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		DC7F4E3725DA7F1C004CDA7F /* SubViews */ = {
@@ -204,6 +228,7 @@
 				DCEAABF225D6F8D3008221EE /* Tests macOS */,
 				DCEAABD525D6F8D3008221EE /* Products */,
 				2B231CFF25EF96E200C50144 /* Frameworks */,
+				A260587CB9065F603B0D8497 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCEAAC0225D6F8D3008221EE /* Build configuration list for PBXNativeTarget "LabTalks (iOS)" */;
 			buildPhases = (
+				CC62235A2AF8407F78FAFD3C /* [CP] Check Pods Manifest.lock */,
 				DCEAABD025D6F8D3008221EE /* Sources */,
 				DCEAABD125D6F8D3008221EE /* Frameworks */,
 				DCEAABD225D6F8D3008221EE /* Resources */,
+				92B427F16C4AF6135ABB9556 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,7 +318,7 @@
 			);
 			name = "LabTalks (iOS)";
 			packageProductDependencies = (
-				2B0D6A4625F18CF20040AAF3 /* Fakery */,
+				2B0D6A4625F18CF20040AAF3 /* SwiftPackageProductDependency */,
 			);
 			productName = "LabTalks (iOS)";
 			productReference = DCEAABD425D6F8D3008221EE /* LabTalks.app */;
@@ -301,6 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCEAAC0525D6F8D3008221EE /* Build configuration list for PBXNativeTarget "LabTalks (macOS)" */;
 			buildPhases = (
+				C94D28BEE3B69B36F9528463 /* [CP] Check Pods Manifest.lock */,
 				DCEAABD825D6F8D3008221EE /* Sources */,
 				DCEAABD925D6F8D3008221EE /* Frameworks */,
 				DCEAABDA25D6F8D3008221EE /* Resources */,
@@ -385,7 +413,7 @@
 			);
 			mainGroup = DCEAABC425D6F8D2008221EE;
 			packageReferences = (
-				2B0D6A4525F18CF20040AAF3 /* XCRemoteSwiftPackageReference "Fakery" */,
+				2B0D6A4525F18CF20040AAF3 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = DCEAABD525D6F8D3008221EE /* Products */;
 			projectDirPath = "";
@@ -431,6 +459,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92B427F16C4AF6135ABB9556 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LabTalks (iOS)/Pods-LabTalks (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LabTalks (iOS)/Pods-LabTalks (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LabTalks (iOS)/Pods-LabTalks (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C94D28BEE3B69B36F9528463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LabTalks (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC62235A2AF8407F78FAFD3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LabTalks (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCEAABD025D6F8D3008221EE /* Sources */ = {
@@ -631,6 +723,7 @@
 		};
 		DCEAAC0325D6F8D3008221EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EAD86B143B7A04247B076B0 /* Pods-LabTalks (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -654,6 +747,7 @@
 		};
 		DCEAAC0425D6F8D3008221EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7839AB63675AE83E6669CE5A /* Pods-LabTalks (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -678,6 +772,7 @@
 		};
 		DCEAAC0625D6F8D3008221EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E4DCD5C7FE3B552E76C5241 /* Pods-LabTalks (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -702,6 +797,7 @@
 		};
 		DCEAAC0725D6F8D3008221EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A28999D51CC605F6CAC4ED24 /* Pods-LabTalks (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -864,7 +960,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2B0D6A4525F18CF20040AAF3 /* XCRemoteSwiftPackageReference "Fakery" */ = {
+		2B0D6A4525F18CF20040AAF3 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/vadymmarkov/Fakery.git";
 			requirement = {
@@ -875,9 +971,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2B0D6A4625F18CF20040AAF3 /* Fakery */ = {
+		2B0D6A4625F18CF20040AAF3 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2B0D6A4525F18CF20040AAF3 /* XCRemoteSwiftPackageReference "Fakery" */;
+			package = 2B0D6A4525F18CF20040AAF3 /* RemoteSwiftPackageReference */;
 			productName = Fakery;
 		};
 /* End XCSwiftPackageProductDependency section */
