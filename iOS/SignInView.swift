@@ -71,7 +71,7 @@ struct SignInView: View {
                 }.padding(.top)
                 Spacer()
             }.padding()
-        } .transition(AnyTransition.move(edge: .leading))
+        }
     }
 }
 
