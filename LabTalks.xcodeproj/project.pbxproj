@@ -17,6 +17,22 @@
 		2B8810BB25ED97E000D64874 /* RoundedFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8810BA25ED97E000D64874 /* RoundedFont.swift */; };
 		2B8810CC25EEB81600D64874 /* SearchAdaptedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8810CB25EEB81600D64874 /* SearchAdaptedView.swift */; };
 		2B8810D625EEB9B500D64874 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8810D525EEB9B500D64874 /* SearchBar.swift */; };
+		2BD52D07265EE0AB00E37F6F /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 2BD52D06265EE0AB00E37F6F /* WebRTC */; };
+		2BD52D0E265FC5AC00E37F6F /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D0D265FC5AC00E37F6F /* SignalingClient.swift */; };
+		2BD52D10265FC69300E37F6F /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D0F265FC69300E37F6F /* WebSocketProvider.swift */; };
+		2BD52D13265FC7EE00E37F6F /* NativeWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D12265FC7EE00E37F6F /* NativeWebSocket.swift */; };
+		2BD52D15265FC95900E37F6F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D14265FC95900E37F6F /* Message.swift */; };
+		2BD52D18265FC9B000E37F6F /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D17265FC9B000E37F6F /* SessionDescription.swift */; };
+		2BD52D1A265FCA0E00E37F6F /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D19265FCA0E00E37F6F /* IceCandidate.swift */; };
+		2BD52D1C265FCD6000E37F6F /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D1B265FCD5F00E37F6F /* RTCStates.swift */; };
+		2BD52D1E265FCE0C00E37F6F /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D1D265FCE0C00E37F6F /* WebRTCClient.swift */; };
+		2BD52D20265FD11A00E37F6F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D1F265FD11A00E37F6F /* Configuration.swift */; };
+		2BD52D23265FDB9500E37F6F /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 2BD52D22265FDB9500E37F6F /* Starscream */; };
+		2BD52D25265FDBC600E37F6F /* StarscreamProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D24265FDBC600E37F6F /* StarscreamProvider.swift */; };
+		2BD52D28265FDF5A00E37F6F /* VideoChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D27265FDF5A00E37F6F /* VideoChatView.swift */; };
+		2BD52D2A265FE03300E37F6F /* RTCVideoViewBridged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D29265FE03300E37F6F /* RTCVideoViewBridged.swift */; };
+		2BD52D2C265FF72E00E37F6F /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D2B265FF72E00E37F6F /* CallView.swift */; };
+		2BD52D2E26603DAE00E37F6F /* CallUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD52D2D26603DAE00E37F6F /* CallUIView.swift */; };
 		2BE0B03125F189CA00FEB7EB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE0B03025F189CA00FEB7EB /* CloudKit.framework */; };
 		DC62D48125E1174500D22188 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62D48025E1174500D22188 /* GroupsView.swift */; };
 		DC62D48225E1174500D22188 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62D48025E1174500D22188 /* GroupsView.swift */; };
@@ -71,6 +87,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2BD52D0B265EE35900E37F6F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2B231CE425EF8FD000C50144 /* CallKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitHelper.swift; sourceTree = "<group>"; };
 		2B231CEE25EF905A00C50144 /* CallManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManagement.swift; sourceTree = "<group>"; };
@@ -79,6 +108,21 @@
 		2B8810BA25ED97E000D64874 /* RoundedFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedFont.swift; sourceTree = "<group>"; };
 		2B8810CB25EEB81600D64874 /* SearchAdaptedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAdaptedView.swift; sourceTree = "<group>"; };
 		2B8810D525EEB9B500D64874 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		2BD52D08265EE35900E37F6F /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = Carthage/Build/WebRTC.xcframework; sourceTree = "<group>"; };
+		2BD52D0D265FC5AC00E37F6F /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
+		2BD52D0F265FC69300E37F6F /* WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
+		2BD52D12265FC7EE00E37F6F /* NativeWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeWebSocket.swift; sourceTree = "<group>"; };
+		2BD52D14265FC95900E37F6F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2BD52D17265FC9B000E37F6F /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		2BD52D19265FCA0E00E37F6F /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
+		2BD52D1B265FCD5F00E37F6F /* RTCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
+		2BD52D1D265FCE0C00E37F6F /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		2BD52D1F265FD11A00E37F6F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		2BD52D24265FDBC600E37F6F /* StarscreamProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarscreamProvider.swift; sourceTree = "<group>"; };
+		2BD52D27265FDF5A00E37F6F /* VideoChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoChatView.swift; sourceTree = "<group>"; };
+		2BD52D29265FE03300E37F6F /* RTCVideoViewBridged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCVideoViewBridged.swift; sourceTree = "<group>"; };
+		2BD52D2B265FF72E00E37F6F /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
+		2BD52D2D26603DAE00E37F6F /* CallUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallUIView.swift; sourceTree = "<group>"; };
 		2BE0B03025F189CA00FEB7EB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		DC62D48025E1174500D22188 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		DC62D48B25E118C300D22188 /* GroupItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupItemView.swift; sourceTree = "<group>"; };
@@ -115,7 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0D6A4725F18CF20040AAF3 /* Fakery in Frameworks */,
+				2BD52D07265EE0AB00E37F6F /* WebRTC in Frameworks */,
 				2BE0B03125F189CA00FEB7EB /* CloudKit.framework in Frameworks */,
+				2BD52D23265FDB9500E37F6F /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +201,7 @@
 		2B231CFF25EF96E200C50144 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BD52D08265EE35900E37F6F /* WebRTC.xcframework */,
 				2BE0B03025F189CA00FEB7EB /* CloudKit.framework */,
 			);
 			name = Frameworks;
@@ -168,6 +215,50 @@
 				2B8810D525EEB9B500D64874 /* SearchBar.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2BD52D0C265FC4CE00E37F6F /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				2BD52D16265FC98700E37F6F /* Extensions */,
+				2BD52D11265FC69F00E37F6F /* WebSocketProvider */,
+				2BD52D0D265FC5AC00E37F6F /* SignalingClient.swift */,
+				2BD52D14265FC95900E37F6F /* Message.swift */,
+				2BD52D1D265FCE0C00E37F6F /* WebRTCClient.swift */,
+				2BD52D1F265FD11A00E37F6F /* Configuration.swift */,
+			);
+			path = WebRTC;
+			sourceTree = "<group>";
+		};
+		2BD52D11265FC69F00E37F6F /* WebSocketProvider */ = {
+			isa = PBXGroup;
+			children = (
+				2BD52D0F265FC69300E37F6F /* WebSocketProvider.swift */,
+				2BD52D12265FC7EE00E37F6F /* NativeWebSocket.swift */,
+				2BD52D24265FDBC600E37F6F /* StarscreamProvider.swift */,
+			);
+			path = WebSocketProvider;
+			sourceTree = "<group>";
+		};
+		2BD52D16265FC98700E37F6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2BD52D17265FC9B000E37F6F /* SessionDescription.swift */,
+				2BD52D19265FCA0E00E37F6F /* IceCandidate.swift */,
+				2BD52D1B265FCD5F00E37F6F /* RTCStates.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2BD52D26265FDF4600E37F6F /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				2BD52D27265FDF5A00E37F6F /* VideoChatView.swift */,
+				2BD52D29265FE03300E37F6F /* RTCVideoViewBridged.swift */,
+				2BD52D2B265FF72E00E37F6F /* CallView.swift */,
+				2BD52D2D26603DAE00E37F6F /* CallUIView.swift */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 		DC7F4E3725DA7F1C004CDA7F /* SubViews */ = {
@@ -232,6 +323,8 @@
 		DCEAABD625D6F8D3008221EE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2BD52D26265FDF4600E37F6F /* Debug */,
+				2BD52D0C265FC4CE00E37F6F /* WebRTC */,
 				2B231CEB25EF8FD500C50144 /* Helpers */,
 				2B8810B925ED97CC00D64874 /* Extensions */,
 				DC7F4E3725DA7F1C004CDA7F /* SubViews */,
@@ -282,6 +375,7 @@
 				DCEAABD025D6F8D3008221EE /* Sources */,
 				DCEAABD125D6F8D3008221EE /* Frameworks */,
 				DCEAABD225D6F8D3008221EE /* Resources */,
+				2BD52D0B265EE35900E37F6F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +384,8 @@
 			name = "LabTalks (iOS)";
 			packageProductDependencies = (
 				2B0D6A4625F18CF20040AAF3 /* Fakery */,
+				2BD52D06265EE0AB00E37F6F /* WebRTC */,
+				2BD52D22265FDB9500E37F6F /* Starscream */,
 			);
 			productName = "LabTalks (iOS)";
 			productReference = DCEAABD425D6F8D3008221EE /* LabTalks.app */;
@@ -356,7 +452,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					DCEAABD325D6F8D3008221EE = {
 						CreatedOnToolsVersion = 12.4;
@@ -385,6 +481,8 @@
 			mainGroup = DCEAABC425D6F8D2008221EE;
 			packageReferences = (
 				2B0D6A4525F18CF20040AAF3 /* XCRemoteSwiftPackageReference "Fakery" */,
+				2BD52D05265EE0AB00E37F6F /* XCRemoteSwiftPackageReference "WebRTC" */,
+				2BD52D21265FDB9500E37F6F /* XCRemoteSwiftPackageReference "Starscream" */,
 			);
 			productRefGroup = DCEAABD525D6F8D3008221EE /* Products */;
 			projectDirPath = "";
@@ -463,24 +561,38 @@
 			files = (
 				2B231CEF25EF905A00C50144 /* CallManagement.swift in Sources */,
 				2B276D5925ED60B900F21C7B /* CustomTextField.swift in Sources */,
+				2BD52D2E26603DAE00E37F6F /* CallUIView.swift in Sources */,
 				DCEAABFC25D6F8D3008221EE /* Persistence.swift in Sources */,
+				2BD52D1A265FCA0E00E37F6F /* IceCandidate.swift in Sources */,
 				DC7F4E4825DA7FA8004CDA7F /* ListMessageItemView.swift in Sources */,
 				2B231CE525EF8FD000C50144 /* CallKitHelper.swift in Sources */,
+				2BD52D18265FC9B000E37F6F /* SessionDescription.swift in Sources */,
+				2BD52D2A265FE03300E37F6F /* RTCVideoViewBridged.swift in Sources */,
 				DC62D48125E1174500D22188 /* GroupsView.swift in Sources */,
 				DCEAABF825D6F8D3008221EE /* LabTalksApp.swift in Sources */,
+				2BD52D0E265FC5AC00E37F6F /* SignalingClient.swift in Sources */,
+				2BD52D20265FD11A00E37F6F /* Configuration.swift in Sources */,
 				2B8810D625EEB9B500D64874 /* SearchBar.swift in Sources */,
 				DC7F4E3925DA7F39004CDA7F /* ListMessageView.swift in Sources */,
 				DC7F4E6025DB3236004CDA7F /* ScaledButtonStyle.swift in Sources */,
 				DCEAABFA25D6F8D3008221EE /* ContentView.swift in Sources */,
+				2BD52D10265FC69300E37F6F /* WebSocketProvider.swift in Sources */,
+				2BD52D1C265FCD6000E37F6F /* RTCStates.swift in Sources */,
+				2BD52D2C265FF72E00E37F6F /* CallView.swift in Sources */,
 				DC7F4E8025DBC73F004CDA7F /* WelcomeView.swift in Sources */,
+				2BD52D13265FC7EE00E37F6F /* NativeWebSocket.swift in Sources */,
 				DC7F4E7525DBC6BB004CDA7F /* SignUpView.swift in Sources */,
 				DC7F4E3125DA7EFB004CDA7F /* TalksView.swift in Sources */,
 				2B8810BB25ED97E000D64874 /* RoundedFont.swift in Sources */,
 				DC7F4E5825DB149B004CDA7F /* SignInView.swift in Sources */,
+				2BD52D28265FDF5A00E37F6F /* VideoChatView.swift in Sources */,
 				DC62D48C25E118C300D22188 /* GroupItemView.swift in Sources */,
 				2B8810CC25EEB81600D64874 /* SearchAdaptedView.swift in Sources */,
+				2BD52D15265FC95900E37F6F /* Message.swift in Sources */,
 				DC7F4E8725DBD028004CDA7F /* AnimatedBackground.swift in Sources */,
+				2BD52D25265FDBC600E37F6F /* StarscreamProvider.swift in Sources */,
 				DCEAAC1825D6FB69008221EE /* LabTalks.xcdatamodeld in Sources */,
+				2BD52D1E265FCE0C00E37F6F /* WebRTCClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,6 +818,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 85Y7A7HSKG;
@@ -730,6 +843,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 85Y7A7HSKG;
@@ -896,6 +1010,22 @@
 				minimumVersion = 5.1.0;
 			};
 		};
+		2BD52D05265EE0AB00E37F6F /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stasel/WebRTC.git";
+			requirement = {
+				branch = latest;
+				kind = branch;
+			};
+		};
+		2BD52D21265FDB9500E37F6F /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -903,6 +1033,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2B0D6A4525F18CF20040AAF3 /* XCRemoteSwiftPackageReference "Fakery" */;
 			productName = Fakery;
+		};
+		2BD52D06265EE0AB00E37F6F /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BD52D05265EE0AB00E37F6F /* XCRemoteSwiftPackageReference "WebRTC" */;
+			productName = WebRTC;
+		};
+		2BD52D22265FDB9500E37F6F /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BD52D21265FDB9500E37F6F /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
 		};
 /* End XCSwiftPackageProductDependency section */
 
