@@ -34,7 +34,7 @@ struct ContentView: View {
           Text("Friends")
           Image(systemName: "person.2.circle.fill")
         }.tag(3)
-        Text("Tab Content 4")
+        SettingsView()
           .tabItem {
           Text("Settings")
           Image(systemName: "gear")

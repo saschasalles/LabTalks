@@ -72,6 +72,7 @@ final class WebRTCClient: NSObject, ObservableObject {
       guard let sdp = sdp else {
         return
       }
+      print("OFFER SDP: \(sdp.sdp)")
 
       self.peerConnection.setLocalDescription(sdp, completionHandler: { (error) in
         completion(sdp)
@@ -86,6 +87,8 @@ final class WebRTCClient: NSObject, ObservableObject {
       guard let sdp = sdp else {
         return
       }
+
+      print("ANSWER SDP: \(sdp.sdp)")
 
       self.peerConnection.setLocalDescription(sdp, completionHandler: { (error) in
         completion(sdp)
